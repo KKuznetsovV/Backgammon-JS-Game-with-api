@@ -1,0 +1,81 @@
+create backgammon game using next rules:
+
+if using Boolean, start it with "is"
+
+place all styling in style.css only
+
+place all script in app.js only
+
+
+use only arrow functions and HOF's
+
+avoid writing comments
+
+make human play against pc
+
+add an option to plug gemini to play pc via api (api input to be shown on game screen only, not in code)
+
+make 5 difficulty levels:
+
+- easy (no gemini option for this level, don't show enable gemini button if chosen)
+- medium
+- hard
+- very hard
+- world champ
+
+add a prompt message with option to change name for both human and pc (use "Kojany" as default name for human and "Pcushka" as default name for pc
+
+make both local pc and gemini use sequence of both dice to make better move (instead using one dice at a time for each move)
+
+add a button which allows to revert moves if moved a wrong chip before end of a move
+
+allow picking multiple chips by selecting them (up to 4 if double is shown), drop them accordingly on click
+
+highlight possible moves for human:
+- when picked a chip highlight both possible moves and combination of both dice
+- if picked multiple chips highlight suggested moves for all chips picked as well as combination of multiple moves with one chip
+
+adjust difficulty level of both local pc and external gemini to make the game against them harder
+
+add first roll of one dice each opponent to decide who rolls first and plays white
+
+if there are no applicable moves, don't let to roll dice for neither opponent (if one or more chips are hit and all house slots are blocked then no moves are possible to make, if one or more chips blockaded and all other chips are on the last square (out of moves) then same principal applies)
+
+if there is only one move available to make for pc tne don't request move from gemini, just apply the only acceptable move
+
+if chosen easy game prompt a message asking: "Would you like to get advices in your game?" with "yes" and "no" options. if chosen yes then highlight advised cheaps in pink and when chosen highlight advised moves in pink
+
+add an option to continue series after finishing a game:
+- add score count
+- if chosen to continue series keep the same difficulty level and gemini settings (enabled/disabled)
+- keep an option to start a new game with new/old settings
+
+winning options:
+- regular win is 1pt
+- win by gammon is 2 pts
+- win by backgammon is 3 pts
+
+message at the end of the game if human wins:
+- if wins regular win: "Congrats, You won!"
+- if wins by gammon: "Congrats, You won by Gammon!!"
+- if wins by backgammon: "Congrats, You won by Backgammon!!!"
+
+message at the end of the game if human loses:
+- regular loss: "Sadly You lost this one"
+- gammon loss: "Sadly You lost by Gammon"
+- backgammon loss: "Sadly you lost by Backgammon"
+
+visualization:
+- use oriental_board.jpeg as a reference to make design of a board and dice in oriental style
+- add dice animation when rolling dice 
+- roll dice button shall only appear at the center of the board when human needs to roll the dice
+
+add tsconfig.json, disallow updating app.js if there is a mistake in app.ts
+
+use es2024 version as target in tsconfig 
+
+adopt this .js to .ts, keep app.ts in src folder, app.js in dist folder
+
+
+
+add .gitignore file

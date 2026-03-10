@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "target": "ES2017",
-    "lib": ["ES2022", "DOM"],
+    "target": "es2024",
+    "lib": ["ES2024", "DOM"],
     "strict": true,
     "noEmitOnError": true,
     "outDir": "./dist",
